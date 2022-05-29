@@ -1,15 +1,13 @@
-import * as React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/home';
-import Login from './pages/login';
+import React from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from './routes';
 
-export default function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route exact path="/" component={Home} />
-        <Route path="/login" component={Login} />
-      </Routes>
-    </Router>
-  );
+function App() {
+    return (
+        <Router>
+            <Routes />
+        </Router>
+    );
 }
+
+export default App;
